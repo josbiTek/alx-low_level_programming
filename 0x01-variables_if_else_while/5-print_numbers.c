@@ -2,8 +2,8 @@
 
 /**
  * Main - main block
- *Description: prints all single digit numbers of base 10
- * Return: Always (Success)
+ *
+ *Return: Always (Success)
  */
 int main(void)
 {
