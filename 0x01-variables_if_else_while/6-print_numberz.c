@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * Main - Prints the numberz 0 to 9
- *
- * Return: Always (Success)
+ * Main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
  */
 int main(void)
 
