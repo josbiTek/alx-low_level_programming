@@ -1,26 +1,32 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+
 /**
- * main - main block
- * Description: Get a randomnumber and check its last digit, compare it with 5
- * Return: 0
+ * main -Prints to assign random number ro variable
+ *
+ * Return: Always (Success)
  */
 int main(void)
 {
-	int n;
-	int last;
+	int n, lastd;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last = n % 10;
+	lastd = n % 10;
 
-	if (last > 5)
-		printf("Last digit of %i is %i and greater than 5\n", n, last);
-	else if (last == 0)
-		printf("Last digit of %i is %i and is 0\n", n, last);
-	else if (last < 6)
-		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
+	if (lastd > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
+	}
+	else if (lastd == 0)
+	{
+		printf("last digit of %d is %d and is 0\n", n, lastd);
+	}
+	else if (lastd < 6 && lastd != 0)
+	{
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+	}
 
-	return	(0);
+	return (0);
 }
