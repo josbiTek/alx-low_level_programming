@@ -1,22 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
- * Return: 0
+ * main - Prints some letters of alphabet
+ *
+ * Return: Always (Success)
  */
 int main(void)
 {
-	char c = 'a';
+	char c;
 
-	while (c <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (c != 'e' && c != 'q')
+		if (c != 'e' && c!= 'q')
 		{
 			putchar(c);
 		}
-		c++;
 	}
 
 	putchar('\n');
+
 	return	(0);
 }
