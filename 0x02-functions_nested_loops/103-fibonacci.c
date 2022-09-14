@@ -5,7 +5,7 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-int main(voi)
+int main(void)
 {
 	unsigned long fin1 = 0, fin2 = 1, sum;
 	float total_sum;
