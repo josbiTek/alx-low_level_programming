@@ -7,23 +7,21 @@
  */
 int main(void)
 {
-	long int i, j, k, next;
-
-	j = 1
-		k = 2;
-	for (i = 1; i <= 50; ++i)
+	int count;
+	unsigned long fin1 = 0, fin2 = 1, sum;
+	
+	for (count = 0; count < 50; ++count)
 	{
-		if (j != 20365011074)
-		{
-			printf("%ld, ", j);
-		}
+		sum = fin1 + fin2;
+		printf("%lu", sum);
+
+		fin1 = fin2;
+		fin2 = sum;
+
+		if (count == 49)
+			print("\n");
 		else
-		{
-			printf("%ld\n", j);
-		}
-		next = j + k;
-		j = k;
-		k = next;
+			printf(",");
 	}
 
 	return	(0);
