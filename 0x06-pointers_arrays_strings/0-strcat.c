@@ -1,19 +1,37 @@
 #include "main.h"
 
+
 /**
- * _strcat -> this is function to concatenate
- * @dest: first parameter
- * @src: second parameter
+ * _strcat -> this is a funcion strcat
+ * @dest: first param
+ * @src: second param
  * Return: a string
  */
-
 char *_strcat(char *dest, char *src)
 {
-	char dest[] = "Hi ";
 
-	char src[] = "Dear!";
+	int len = 0, i;
 
-	strcat(dest, src);
-	_putchar("Concatenated string: %s\n", dest);
-	return	(0);
+
+
+	while (dest[len])
+
+		len++;
+
+
+
+	for (i = 0; src[i] != 0; i++)
+
+	{
+
+		dest[len] = src[i];
+
+		len += 1;
+
+	}
+
+	dest[len] = '\0';
+
+	return (dest);
+
 }
